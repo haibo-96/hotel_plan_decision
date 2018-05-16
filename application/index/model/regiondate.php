@@ -13,5 +13,5 @@ use think\Model;
 
 class regionDate extends Model
 {
-    
+
 }
