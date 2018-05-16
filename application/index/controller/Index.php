@@ -1,6 +1,7 @@
 <?php
 namespace app\index\controller;
 use app\index\domain\HotelInfoRecive;
+use app\index\model\regionDate;
 use app\index\service\generateHotelDateImpl;
 use think\Controller;
 use think\Request;
@@ -10,7 +11,9 @@ class Index extends controller
 {
     public function index()
     {
-        return $this->fetch();
+        $regionDate = regionDate::all();
+        dump($regionDate);
+//        return $this->fetch();
     }
 
     public function genetateHotelDate(){
