@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>酒店建筑方案决策</title>
+</head>
+
+<body>
+<form name="form1" method="POST" action="index/index/genetateHotelDate" target="_blank">
+    <table>
+        <tr><td>投资额:<input type="text" name="amountInvested"></td></tr>
+        <tr><td>回收期:<input type="text" name="paybackPeriod"></td></tr>
+        <tr><td>摊销及所得税前利润率:<input type="text" name="profitRate">%</td></tr>
+        <tr><td>营收比例:客房<input type="text" name="POR_OfHotel"></td><td>其它<input type="texy" name="qtysbl"></td></tr>
+        <tr><td>地区:<select name="region">
+            <option value="sx" selected="selected">山西</option>
+            <option value="sd">山东</option>
+            <option value="sh">上海</option>
+        </select>
+        </td>
+        </tr>
+        <tr><td>酒店类型:<select name="typeOfHotel">
+            <option value="convention">会议型</option>
+            <option value="business" selected="selected">商务型</option>
+            <option value="resort">度假型</option>
+        </select>
+        </td>
+        </tr>
+        <tr><td>酒店星级:<select name="hotelRating">
+            <option value="fiveStar" selected="selected">五星级</option>
+            <option value="fourStar">四星级</option>
+            <option value="threeStar">三星级</option>
+        </select>
+        </td>
+        </tr>
+        <tr><td><input type="submit" name="submit"></td></tr>
+    </table>
+</form>
+</body>
+
+</html>
