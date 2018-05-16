@@ -11,7 +11,7 @@ namespace app\index\model;
 
 use think\Model;
 
-class regionDate extends Model
+class regiondate extends Model
 {
     protected $table = 'regiondate';
 }
